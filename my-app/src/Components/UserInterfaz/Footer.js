@@ -1,8 +1,10 @@
 
-function Footer () {
+import './Footer.css';
+
+function Footer() {
     return (
-        <div>
-            <p>Buenas noches</p>
+        <div className='header'>
+            <p>Privacy and legal information</p>
         </div>
     )
 }

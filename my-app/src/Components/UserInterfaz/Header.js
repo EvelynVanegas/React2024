@@ -1,7 +1,10 @@
-function Header () {
+import './Header.css'
+
+function Header() {
     return (
-        <div>
-            <p>Buenos días</p>
+        <div className='header'>
+            <h2>LIST OR PRODUCTS</h2>
+            <p>With description, date and price</p>
         </div>
     )
 }

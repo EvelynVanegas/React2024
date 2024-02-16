@@ -1,10 +1,18 @@
 import './Producto.css';
 import FechaProducto from './FechaProducto';
+import {useState} from 'react';
 
 function Producto(props) {
 
-    const nombre = props.producto.nombre;
+    const [nombre, setNombre] = useState(props.producto.nombre);
+
     const precio = props.producto.precio;
+
+
+    const clickHandler = () => {
+        alert('Entra');
+        setNombre('Nuevo nombre');
+    }
 
     return (
         <div className='producto'>
@@ -15,6 +23,7 @@ function Producto(props) {
                 <h2>{nombre}</h2>
                 <div className='producto__precio'>{precio}</div>
             </div>
+            <button onClick={clickHandler}>Cambia nombre</button>
         </div>
     )
 }
