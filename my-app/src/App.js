@@ -1,6 +1,7 @@
 import './App.css';
-import Producto from './Components/Producto';
-import Productos from './Components/Productos';
+import Productos from './Components/Productos/Productos';
+import Header from './Components/UserInterfaz/Header';
+import Footer from './Components/UserInterfaz/Footer';
 
 function App() {
 
@@ -27,11 +28,11 @@ function App() {
 
   return (
     <div>
-      <p>Hola mundo</p>
-      <p>Producto tal</p>
-
-      <Productos productos={productos} />
       
+      <Header header />
+      <Productos productos={productos} />
+      <Footer footer />
+
     </div>
   );
 }
