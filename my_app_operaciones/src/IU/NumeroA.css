@@ -1,0 +1,11 @@
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .pressed {
+    background-color: #3498db; /* Puedes cambiar el color según tu preferencia */
+    color: #fff; /* Puedes cambiar el color del texto cuando está pulsado */
+  }
+  
