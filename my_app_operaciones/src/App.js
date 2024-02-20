@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './IU/Header';
 import Footer from './IU/Footer';
-import NumeroA from './IU/NumeroA';
+import FormularioNumeros from './IU/FormularioNumeros';
 import Resultado from './IU/Resultado';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
 
-      <NumeroA />
+      <FormularioNumeros />
       <Resultado />
 
       <Footer />
