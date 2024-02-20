@@ -59,6 +59,7 @@ function App() {
       <NuevoProducto addProducto={addProducto}/>
 
       <Productos productos={productos} borraProducto={borraProducto}/>
+      
       <Footer />
 
     </div>
