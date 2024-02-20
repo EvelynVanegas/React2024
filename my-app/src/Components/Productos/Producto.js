@@ -1,6 +1,7 @@
 import './Producto.css';
 import FechaProducto from './FechaProducto';
 import {useState} from 'react';
+import Button from 'react-bootstrap/Button';
 
 function Producto(props) {
 
@@ -23,7 +24,7 @@ function Producto(props) {
                 <h2>{nombre}</h2>
                 <div className='producto__precio'>{precio}</div>
             </div>
-            <button onClick={clickHandler}>Cambia nombre</button>
+            <Button onClick={clickHandler}>Cambia nombre</Button>
         </div>
     )
 }

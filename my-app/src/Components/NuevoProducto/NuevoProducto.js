@@ -1,4 +1,9 @@
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const NuevoProducto = (props) => {
 
@@ -32,23 +37,28 @@ const NuevoProducto = (props) => {
     }
 
     return (
-        <form onSubmit={submitHandler}>
-            <div>
-                <label>Nombre: </label>
-                <input onChange={nombreHadler} type='text' value={nombre}/>
-            </div>
-            <div>
-                <label>Precio: </label>
-                <input onChange={precioHadler} type='number' value={precio}/>
-            </div>
-            <div>
-                <label>Fecha: </label>
-                <input onChange={fechaHadler} type='date' value={fecha}/>
-            </div>
-            <div>
-                <button type='submit'>Añadir Producto</button>
-            </div>
-        </form>
+        <Form onSubmit={submitHandler}>
+            <Container>
+                <Row>
+                    <Col>
+                        <Form.Label>Nombre: </Form.Label>
+                        <Form.Control onChange={nombreHadler} type='text' value={nombre} />
+                    </Col>
+
+                    <Col>
+                        <Form.Label>Precio: </Form.Label>
+                        <Form.Control onChange={precioHadler} type='number' value={precio} />
+                    </Col>
+                    <Col>
+                        <Form.Label>Fecha: </Form.Label>
+                        <Form.Control onChange={fechaHadler} type='date' value={fecha} />
+                    </Col>
+                    <Col>
+                        <Button type='submit' variant="success">Añadir Producto</Button>
+                    </Col>
+                </Row>
+            </Container>
+        </Form>
     )
 }
 
