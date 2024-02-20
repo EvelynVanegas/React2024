@@ -18,19 +18,19 @@ function App() {
       {
         id: Math.random().toString(),
         nombre: 'Segundo producto',
-        precio: 45.5,
+        precio: 40.5,
         fecha: new Date(2024, 1, 7)
       },
       {
         id: Math.random().toString(),
         nombre: 'Tercer producto',
-        precio: 45.5,
+        precio: 50.5,
         fecha: new Date()
       },
       {
         id: Math.random().toString(),
         nombre: 'Cuarto producto',
-        precio: 45.5,
+        precio: 55.5,
         fecha: new Date()
       }
     ]
