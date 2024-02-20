@@ -41,16 +41,16 @@ const NuevoProducto = (props) => {
             <Container>
                 <Row>
                     <Col>
-                        <Form.Label>Nombre: </Form.Label>
+                        <Form.Label>Nombre </Form.Label>
                         <Form.Control onChange={nombreHadler} type='text' value={nombre} />
                     </Col>
 
                     <Col>
-                        <Form.Label>Precio: </Form.Label>
+                        <Form.Label>Precio </Form.Label>
                         <Form.Control onChange={precioHadler} type='number' value={precio} />
                     </Col>
                     <Col>
-                        <Form.Label>Fecha: </Form.Label>
+                        <Form.Label>Fecha </Form.Label>
                         <Form.Control onChange={fechaHadler} type='date' value={fecha} />
                     </Col>
                     <Col>
