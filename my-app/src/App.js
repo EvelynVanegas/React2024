@@ -43,6 +43,14 @@ function App() {
     });
   }
 
+  const borraProducto = (id) => {
+    let copiaProductos = [...productos];
+    copiaProductos = copiaProductos.filter((elemento) => {
+      return elemento.id !== id;
+    })
+    setProductos(copiaProductos);
+  }
+
   return (
     <div>
       
@@ -50,7 +58,7 @@ function App() {
 
       <NuevoProducto addProducto={addProducto}/>
 
-      <Productos productos={productos} />
+      <Productos productos={productos} borraProducto={borraProducto}/>
       <Footer />
 
     </div>

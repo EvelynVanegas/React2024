@@ -7,7 +7,7 @@ function Productos(props) {
         <div>
             {props.productos.map((elemento) => {
                 return (
-                    <Producto key={elemento.id} producto={elemento} />
+                    <Producto key={elemento.id} producto={elemento} borraProducto={props.borraProducto}/>
                 )
             })}
         </div>
