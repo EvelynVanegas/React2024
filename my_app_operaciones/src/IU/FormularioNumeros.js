@@ -71,7 +71,7 @@ function FormularioNumeros(props) {
                         <Button
                             type='submit'
                             onClick={(event) => submitHandler(event, '+')}
-                            variant={operacion === '+' ? 'primary' : 'secondary'}
+                            variant={operacion === '+' ? 'primary' : 'outline-primary'}
                             active={operacion === '+'}
                         >
                             +
@@ -79,7 +79,7 @@ function FormularioNumeros(props) {
                         <Button
                             type='submit'
                             onClick={(event) => submitHandler(event, '-')}
-                            variant={operacion === '-' ? 'primary' : 'secondary'}
+                            variant={operacion === '-' ? 'primary' : 'outline-primary'}
                             active={operacion === '-'}
                         >
                             -
@@ -87,7 +87,7 @@ function FormularioNumeros(props) {
                         <Button
                             type='submit'
                             onClick={(event) => submitHandler(event, '*')}
-                            variant={operacion === '*' ? 'primary' : 'secondary'}
+                            variant={operacion === '*' ? 'primary' : 'outline-primary'}
                             active={operacion === '*'}
                         >
                             *
@@ -95,7 +95,7 @@ function FormularioNumeros(props) {
                         <Button
                             type='submit'
                             onClick={(event) => submitHandler(event, '/')}
-                            variant={operacion === '/' ? 'primary' : 'secondary'}
+                            variant={operacion === '/' ? 'primary' : 'outline-primary'}
                             active={operacion === '/'}
                         >
                             /
